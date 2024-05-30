@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900 ;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    color:white;
+    background-color: #F2D5C4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px;
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.navbar li{
+    margin:0 10px;
+}
+.navbar a{
+    color:#023859 ;
+    text-decoration: none;
+    margin: 5px;
+    font-weight: bold;
+    font-family:"Roboto Condensed", sans-serif;
+} 
+.navbar a:hover{
+    color: #4189A6
+}
+body{
+    background-color: beige;
+}
+
+.carousel-inner{
+    width: 100%;
+    height: 500px;
+}
+.carousel-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: beige;
+}
+footer {
+    background-color:#F2AD94 ;
+    color: white;
+    padding:20px 10px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer-nav li {
+    display: inline;
+    margin: 0 15px;
+}
+.footer-nav a {
+    color: #023859;
+    text-decoration: none;
+    font-weight: bold;
+    font-family:"Roboto Condensed", sans-serif;
+}
+.footer-nav a:hover {
+    color:  #4189A6;
+}
+.footer-redes h4{
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+.footer-redes img{
+    margin: 10px;
+    width: 30px; 
+    height: 30px;
+}
+.footer-redes a:hover {
+    color: #4189A6;
+}
+h1{
+    font-family:"Great Vibes", cursive;
+    font-size: 40px; 
+}
+.h2{
+    margin: 30px;
+    font-family: "Roboto Condensed", sans-serif;
+    display: flex;
+   justify-content: center;
+   text-align: center;
+    font-size: 2rem;
+    color:#F29985;
+}
+h3{
+    margin: 15px;
+    text-align: center;
+    font-family:"Roboto Condensed", sans-serif;
+    font-size: 2rem;
+    color:#F29985;
+}
+p {
+    display: flex;
+    font-family:"Source Sans 3", sans-serif ;
+    color:#023859;
+    padding: 50px;
+    justify-content: center;
+    background-color: beige;
+}
+section{
+    font-family:"Source Sans 3", sans-serif ;
+}
+section a{
+    color: black;
+    text-decoration: none;
+}
+.botones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius:20px;
+    padding: 20px;
+    margin: 20px;
+}
+.botones div {
+    background-color:#4189A6;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+.botones div h2 a {
+    color: white;
+    text-decoration: none;
+}
+.botones a:hover{
+    color:#F29985
+}
+.texto{ 
+    background-color: beige;
+    font-family:"Source Sans 3", sans-serif ;
+    margin:30px;
+    text-align: center;
+}
+.texto h3{
+    font-family:"Roboto Condensed", sans-serif;
+    color: #F29985;
+}
+.miHistoria{
+    display:flex;
+    flex-direction:row-reverse;
+    align-items: center;
+    margin: 50px;
+    background-color: beige;
+}
+.miHistoria img{
+    margin-left:50px;
+    width: 40%;
+    border-radius: 20px;
+}
+.miMision{
+    display: flex;
+    flex-direction: inline-block;
+    margin: 50px;
+    align-items: center;
+    background-color: beige;
+}
+.miMision img{
+    width: 40%;
+    margin-right:  50px;
+    border-radius: 20px;
+}
+.beneficios{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    background-color: beige;
+}
+.beneficios img{
+    width: 30%;
+    margin: 0px 50px 0px 50px;
+    border-radius: 20px;
+}
+.videos{
+    display: inline-block;
+    flex-direction:column;
+    margin: 30px;
+    text-align: center;
+}
+.btn.botonForm {
+    background-color: #F29985;
+    color:#023859
+}
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+    }
+   .navbar ul{
+    flex-direction: column;
+   }
+    .botones{
+        flex-direction: column;
+    }
+    .footer-nav ul{
+        flex-direction: column;
+    }
+    .miHistoria{
+        flex-direction: column;
+    }
+    .miMision{
+        flex-direction: column;
+        align-items: center;
+    }
+    .beneficios{
+        flex-direction: column;
+    }
+    .videos iframe{
+        flex-direction: column;
+    
+    }
+}
+/* Color Theme Swatches in Hex */
+.Yoga-Poses-1-hex { color: #023859; }
+.Yoga-Poses-2-hex { color: #4189A6; }
+.Yoga-Poses-3-hex { color: #F2D5C4; }
+.Yoga-Poses-4-hex { color: #F2AD94; }
+.Yoga-Poses-5-hex { color: #F29985; }
+
