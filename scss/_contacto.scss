@@ -1,0 +1,21 @@
+ form{
+    border-radius: 3px;
+    margin: 20px;
+ }
+ .btn.botonForm {
+    background-color: $colorPrimario;
+    color:$colorTextos;
+    border-radius: 2px;
+    font-weight: bold;
+ } .row {
+    display: flex;    
+    justify-content: center;
+    border-radius: 2px;
+ }
+ form label{
+    color:$colorTextos;
+   font-weight: bold;
+ }
+ .botonForm:hover {
+    background-color: $colorHover;
+}

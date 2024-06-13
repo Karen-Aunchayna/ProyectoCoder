@@ -1,0 +1,49 @@
+@media(max-width:768px){
+   header{
+    flex-direction: column;
+    align-items: flex-start;
+    .navbar-collapse {
+        width: 100%;
+        .navbar-nav {
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+        .nav-item {
+            margin: 5px 0;
+            width: 100%;
+            .nav-link {
+                width: 100%;
+                text-align: left;
+                padding: 10px;
+            }
+        }
+    }
+}
+    .botones{
+        flex-direction: column;
+    }
+    .footer-nav ul{
+        flex-direction: column;
+        align-items: center;
+        .footer-nav a{
+            flex-direction: column;
+            text-align: center;
+        }
+    } .miHistoria{
+        flex-direction: column;
+    }
+    .miMision{
+        flex-direction: column;
+        align-items: center;
+    }
+    .beneficios{
+        flex-direction: column;
+    }
+    .videos iframe{
+        flex-direction: column;
+        width: 60%;
+        height: 40%;
+    
+    }
+}

@@ -1,0 +1,117 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import "index";
+@import "conoceMiHistoria";
+@import "beneficios";
+@import "clases";
+@import "contacto";
+@import "mediaQueris";
+
+@mixin flex($display,$direction,$align){
+    display: $display;
+    flex-direction: $direction;
+    align-items: $align
+}
+header{
+    @include flex(flex,row,center)
+}
+header{
+    background-image: linear-gradient(to bottom,$colorPrimario, $colorFondosDiv, );
+    justify-content: space-between;
+    padding: 10px;
+    h1{
+        color: white;
+       font-family: $fuenteH1;
+    }
+    .navbar ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar li{
+        margin:0 10px;
+    }
+    .navbar a{
+        color: $colorTextos ;
+        text-decoration: none;
+        margin: 5px;
+        font-weight: bold;
+        font-family:"Roboto Condensed", sans-serif;
+    } 
+    .navbar a:hover{
+        color: $colorHover
+    }
+}
+.h2{
+    margin: 30px;
+    font-family:$fuentesNavFooterYsubtitulos;
+    display: flex;
+   justify-content: center;
+   text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color:$colorTextos;
+}
+h3{
+    margin: 15px;
+    text-align: center;
+    font-family:$fuentesNavFooterYsubtitulos;
+    font-size: 2rem;
+    color: $colorTextos;
+}
+p {
+    display: flex;
+    font-family:$fuenteTexto ;
+    color:$colorTextos;
+    padding: 40px;
+    justify-content: center;
+    background-color: $colorFondoP;
+    margin: 20px;
+    text-align: justify;
+}
+body{
+    background: #d9a7c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+footer{
+    @include flex(flex,column,center)
+}
+footer{
+    background-image: linear-gradient(to top,$colorPrimario, $colorFondosDiv, );
+    padding:20px 10px;
+    margin-top: 20px;
+    text-align: center;
+    .footer-nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .footer-nav li {
+        display: inline;
+        margin: 0 15px;
+    }
+    .footer-nav a {
+        color:$colorTextos;
+        text-decoration: none;
+        font-weight: bold;
+        font-family:$fuentesNavFooterYsubtitulos;
+    }
+    .footer-nav a:hover {
+        color: $colorHover;
+    }
+    .footer-redes h4{
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+    .footer-redes img{
+        margin: 10px;
+        width: 30px; 
+        height: 30px;
+    }
+    .footer-redes a:hover {
+        color: $colorHover;
+    }
+}
+
+

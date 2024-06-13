@@ -1,0 +1,18 @@
+@mixin flex($display,$direction,$align){
+    display: $display;
+    flex-direction: $direction;
+    text-align: $align;
+
+}
+.beneficios{
+    @include flex(flex,row,justify)}
+.beneficios{
+    margin: 50px;
+    background-color: $colorFondosDiv;
+    border-radius: 30px;
+}
+.beneficios img{
+    width: 30%;
+    border-radius: 20px;
+}
+

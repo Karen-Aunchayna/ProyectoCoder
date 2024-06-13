@@ -1,0 +1,39 @@
+@mixin flex($display,$direction,$align){
+    display: $display;
+    flex-direction: $direction;
+   align-items: $align;
+}
+.miHistoria{
+    @include flex(flex,row-reverse,center)
+}
+.miHistoria{
+    margin: 50px;
+    background-color:$colorFondosDiv;
+    border-radius: 20px;
+    p
+    {text-align: justify;
+    }
+}
+.miHistoria img{
+    margin-left:50px;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.miMision{
+    @include flex(flex,inline-block,center)
+}
+.miMision{
+    margin: 50px;
+    background-color: $colorFondosDiv;
+    border-radius: 20px;
+    p
+    {text-align: justify;
+    }
+}
+.miMision img{
+    width: 40%;
+    margin-right:  50px;
+    border-radius: 20px;
+}
+
